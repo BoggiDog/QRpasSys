@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1>You can't use this site without authentication!</h1>
+<p> Forget to login <a href="{% url 'login' %}">Login</a></p>
+<p> Have no account <a href="{% url 'register' %}">Register</a></p>
+</body>
+</html>
+{% endblock %}
